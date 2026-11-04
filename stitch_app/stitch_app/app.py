@@ -36,3 +36,5 @@ if r:
              caption=f"{W} x {H} stitches, {len(r['legend'])} colors")
     st.dataframe([{"Symbol": l["sym"], "DMC": l["code"], "Stitches": l["count"]} for l in r["legend"]], hide_index=True)
     st.download_button("Download PDF", r["pdf"], "cross-stitch-pattern.pdf", "application/pdf", type="primary")
+st.divider()
+st.link_button("☕ Support this tool", "https://ko-fi.com/handlevaultofficial")
